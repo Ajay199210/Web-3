@@ -1,0 +1,77 @@
+body {
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  background-color: rgb(75, 75, 75);
+}
+body * {
+  border-radius: 7px;
+}
+
+h1 {
+  color: orange;
+}
+
+#conteneurMenu {
+  margin: 10px auto;
+}
+#conteneurMenu input {
+  padding: 5px 10px;
+  font-size: 1.01em;
+  outline: none;
+  border: none;
+}
+
+#conteneurTaches {
+  border: 1px solid rgb(218, 218, 218);
+  width: 600px;
+  margin: 1px auto;
+  padding: 0;
+}
+#conteneurTaches .divTache {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  overflow: auto;
+  margin: 5px;
+  padding: 5px;
+}
+#conteneurTaches .divTache p {
+  font-size: 1.1em;
+  flex-grow: 1;
+  color: white;
+  margin: 1px;
+  padding: 1px;
+}
+#conteneurTaches .divTache:hover {
+  background-color: #bababa;
+}
+#conteneurTaches .divTache:hover p {
+  color: black;
+  font-weight: bold;
+}
+
+.btnVert {
+  background-color: rgb(76, 123, 5);
+  font-size: 1.01em;
+  color: white;
+  padding: 7px;
+  border: none;
+  cursor: pointer;
+}
+.btnVert:hover {
+  background-color: #2e4a03;
+}
+
+.btnRouge {
+  background-color: rgb(170, 7, 7);
+  font-size: 1.01em;
+  color: white;
+  padding: 7px;
+  border: none;
+  cursor: pointer;
+}
+.btnRouge:hover {
+  background-color: #790505;
+}
+
+/*# sourceMappingURL=style.css.map */

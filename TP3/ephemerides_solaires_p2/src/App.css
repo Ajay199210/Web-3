@@ -1,0 +1,147 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Custom CSS */
+body {
+  background-color: whitesmoke;
+}
+
+h1 {
+  color: darkcyan;
+  font-style: italic;
+}
+
+h3 {
+  font-style: italic;
+}
+
+select {
+  margin: 0 1.5px;
+  padding: 5px;
+  background-color: darkcyan;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+button {
+  margin: 0 1.5px;
+  padding: 5px;
+  border: 1px solid darkcyan;
+  background-color: white;
+  color: darkcyan;
+  border-radius: px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: darkcyan;
+  color: white;
+}
+
+#conteneur {
+  margin: 25px auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid darkcyan;
+  border-radius: 10px;
+  background: rgb(34,193,195);
+  background: linear-gradient(180deg, rgba(34,193,195,1) 0%, rgb(50, 50, 50) 100%);
+  height: 300px;
+  width: 95%;
+  overflow: auto;
+}
+  #conteneur .carte {
+    position: relative;
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 10px;
+  }
+    #conteneur .carte .carteHeader h2 {
+      font-style: italic;
+      display: inline;
+    }
+    
+    #conteneur .carte .carteHeader button {
+      position: absolute;
+      right: 5px;
+      font-size: 0.75em;
+      background-color: red;
+      font-weight: bold;
+      border: none;
+      border-radius: 50%;
+      color: white;
+    }
+    #conteneur .carte .carteHeader button:hover {
+      background-color: rgb(150, 0, 0);
+      color: rgba(255, 255, 255, 0.900);
+    }
+
+    #conteneur .carte hr {
+      border-bottom: 2px solid darkcyan;
+    }
+
+    #conteneur .carte table {
+      border-collapse: collapse;
+    } 
+      #conteneur .carte table td {
+        padding: 15px;
+        border-radius: 5px;
+        vertical-align: middle;
+        font-weight: bold;
+        font-size: 1.15em;
+      }
+      #conteneur .carte table .value {
+        text-align: right;
+      }
+      #conteneur .carte table tr img {
+        width: 45px;
+        height: 45px;
+      }
+      #conteneur .carte table .icon {
+        text-align: left;
+      }

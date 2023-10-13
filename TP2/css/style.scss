@@ -1,0 +1,80 @@
+@import "_variables";
+
+body {
+    font-family: $bodyFont;
+    text-align: $cen;
+    background-color: $bgColor;
+
+    * {
+        border-radius: $borderRad;
+    }
+}
+
+h1 {
+    color: orange;
+}
+
+#conteneurMenu {
+    margin: 10px auto;
+
+    input {
+        padding: 5px 10px;
+        font-size: 1.01em;
+        outline: none;
+        border: none;
+    }
+}
+
+#conteneurTaches {
+    border: $border;
+    width: 600px;
+    margin: 1px auto;
+    padding: 0;
+
+    .divTache {
+        display: flex;
+        align-items: $cen;
+        padding: 0 10px;
+        overflow: auto;
+        margin: 5px;
+        padding: 5px;
+    
+        p {
+            font-size: 1.1em;
+            flex-grow: 1;
+            color: white;
+            margin: 1px;
+            padding: 1px;
+        }
+    
+        &:hover {
+            background-color: darken($hoverDivTacheColor, 10%);
+
+            p {
+                color: black;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+// Définition du mixin pour les boutons personnalisés
+@mixin bouton($couleurFond) {
+    background-color: $couleurFond;
+    font-size: 1.01em;
+    color: white;
+    padding: $btnPad;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($couleurFond, 10%);
+    }
+}
+
+// Créer les classes des boutons à partir de la liste de couleurs (dans _variables.scss)
+@each $cle, $val in $couleurs {
+    .btn#{$cle} {
+        @include bouton($val);
+    }
+}

@@ -1,0 +1,120 @@
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+button {
+    font-size: 1.075em;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+}
+
+::placeholder {
+    text-transform: uppercase;
+    font-size: 0.80em;
+}
+
+.formulaire {
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: whitesmoke;
+    font-family: sans-serif;
+    border-radius: 5px;
+    width: 40%;
+}
+
+    h1, 
+    .formulaire .nom, 
+    .formulaire .courriel,
+    .formulaire .password {
+        padding: 10px 25px;
+    }
+    
+    .formulaire .nom,
+    .formulaire .courriel,
+    .formulaire .password {
+        margin: 10px auto auto 0;
+    }
+
+    .formulaire label {
+        display: none;
+        font-size: 1.25em;
+        margin-bottom: 10px;
+    }
+
+    .formulaire input {
+        border: none;
+        border-bottom: 1px solid grey;
+        outline: none;
+        background: none;
+        display: block;
+        width: 100%;
+        font-size: 1.25em;
+    }
+
+    .formulaire .btns {
+        margin-bottom: 100px;
+    }
+
+    .formulaire button:hover {
+        background-color: lightslategrey !important;
+        color: black !important;
+    }
+    
+    /* Bouton auto fill */
+    .formulaire #auto-fill {
+        margin: 25px;
+        width: 30%;
+        border-radius: 5px;
+        background-color: rgb(50, 50, 50);
+        color: whitesmoke;
+        padding: 10px;
+        text-transform: initial;
+        letter-spacing: 3;
+        font-style: italic;
+    }
+
+    .formulaire #auto-fill:hover {
+        background-color: goldenrod !important;
+        color: black !important;
+    }
+
+    .formulaire button[type="submit"] {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        height: 45px;
+        background-color: rgb(45, 60, 100);
+        color: whitesmoke;
+        border-bottom-right-radius: 5px;
+    }
+    
+    /* Bouton secondaire  */
+    .formulaire .secondary-btn {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 50%;
+        height: 45px;
+        background-color: rgb(50, 50, 50);
+        color: whitesmoke;
+        border-bottom-left-radius: 5px;
+    }
+
+    .formulaire #toggle-pass {
+        position: absolute;
+        right: 25px;
+        cursor: pointer;
+        text-decoration: underline;
+        font-size: 0.8em;
+        letter-spacing: 0.25;
+    }
+
+    .formulaire #toggle-pass:active {
+        color: red;
+    }

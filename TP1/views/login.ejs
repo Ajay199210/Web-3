@@ -1,0 +1,29 @@
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="main.js"></script>
+
+<style>
+    body {
+        background-color: rgb(227, 88, 105);
+    }
+</style>
+
+<!-- Body -->
+<div class="formulaire">
+
+    <h1>Connexion</h1>
+
+    <form action="/login" method="post">
+        <div class="courriel">
+            <label for="courriel">Courriel</label>
+            <input type="email" name="courriel" id="courriel" placeholder="courriel" required>
+        </div>
+        <div class="password">
+            <label for="password">Mot de passe</label>
+            <input type="password" name="password" id="password" placeholder="mot de passe" required>
+        </div>
+        <div class="btns">
+            <button type="submit">Connexion</button>
+            <button type="button" class="secondary-btn">Nouveau compte</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,37 @@
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="main.js"></script>
+
+<style>
+    body {
+        background-color: rgb(100, 149, 237);
+    }
+</style>
+
+<!-- Body -->
+<div class="formulaire">
+
+    <h1>Enregistrement</h1>
+
+    <button id="auto-fill">Auto Fill</button>
+
+    <form action="/register" method="post">
+        <div class="nom">
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" id="nom" placeholder="nom" required>
+        </div>
+        <div class="courriel">
+            <label for="courriel">Courriel</label>
+            <input type="email" name="courriel" id="courriel" placeholder="courriel"  required>
+        </div>
+        <div class="password">
+            <label for="password">Mot de passe</label>
+            <input type="password" name="password" id="password" placeholder="mot de passe" required>
+            <br />
+            <span id="toggle-pass">Afficher le mot de passe</span>
+        </div>
+        <div class="btns">
+            <button type="button" class="secondary-btn">Connexion</button>
+            <button type="submit">Enregistrer</button>
+        </div>
+    </form>
+</div>
